@@ -1,0 +1,11 @@
+2024-06-21 11:06:50,286 [MainThread  ] [ERROR]  Uncaught exception
+Traceback (most recent call last):
+  File "d:\Baseline_ViSL1\train_sh\train.py", line 248, in <module>
+    run(
+  File "d:\Baseline_ViSL1\train_sh\train.py", line 106, in run
+    dataset = dsl.DSL(root, height=HEIGHT, width=WIDTH, n_frames=n_frames, random_seed=seed, cache_folder=cache)
+  File "d:\Baseline_ViSL1\resources\utils\rgb_dataset.py", line 160, in __init__
+    self.get_dataset_info()
+  File "d:\Baseline_ViSL1\resources\utils\rgb_dataset.py", line 164, in get_dataset_info
+    data_batch = os.listdir(self.dataset_path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'd:/Baseline_ViSL1/dataset'
